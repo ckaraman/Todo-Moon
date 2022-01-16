@@ -43,8 +43,7 @@ class TodoCard extends StatelessWidget {
                     timeInSecForIosWeb: 1,
                     backgroundColor: Colors.green,
                     textColor: Colors.white,
-                    fontSize: 16.0
-                );
+                    fontSize: 16.0);
               },
             ),
             children: [
@@ -59,8 +58,7 @@ class TodoCard extends StatelessWidget {
                       timeInSecForIosWeb: 1,
                       backgroundColor: Colors.green,
                       textColor: Colors.white,
-                      fontSize: 16.0
-                  );
+                      fontSize: 16.0);
                 },
                 backgroundColor: Colors.green,
                 label: 'Done!',
@@ -80,8 +78,7 @@ class TodoCard extends StatelessWidget {
                     timeInSecForIosWeb: 1,
                     backgroundColor: Colors.red,
                     textColor: Colors.white,
-                    fontSize: 16.0
-                );
+                    fontSize: 16.0);
               },
             ),
             children: [
@@ -96,8 +93,7 @@ class TodoCard extends StatelessWidget {
                       timeInSecForIosWeb: 1,
                       backgroundColor: Colors.red,
                       textColor: Colors.white,
-                      fontSize: 16.0
-                  );
+                      fontSize: 16.0);
                 },
                 backgroundColor: Colors.red,
                 label: 'Remove!',
@@ -135,8 +131,7 @@ class TodoCard extends StatelessWidget {
                                 timeInSecForIosWeb: 1,
                                 backgroundColor: Colors.green,
                                 textColor: Colors.white,
-                                fontSize: 16.0
-                            );
+                                fontSize: 16.0);
                           },
                         ),
                       ),

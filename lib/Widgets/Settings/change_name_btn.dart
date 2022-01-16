@@ -7,10 +7,17 @@ class ChangeNameBTN extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top : 10.0 ,left : 10.0),
-      child: ElevatedButton(onPressed: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) => WelcomeScreen()));
-      }, child: Text('Change Name'),style: ElevatedButton.styleFrom(primary : Colors.black38,shape: const StadiumBorder(),)),
+      padding: const EdgeInsets.only(top: 10.0, left: 10.0),
+      child: ElevatedButton(
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const WelcomeScreen()));
+          },
+          child: const Text('Change Name'),
+          style: ElevatedButton.styleFrom(
+            primary: Colors.black38,
+            shape: const StadiumBorder(),
+          )),
     );
   }
 }

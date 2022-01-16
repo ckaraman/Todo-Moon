@@ -6,10 +6,10 @@ class CompletedTaskInfo extends StatefulWidget {
   const CompletedTaskInfo({Key? key}) : super(key: key);
 
   @override
-  _Task_InfoState createState() => _Task_InfoState();
+  _TaskInfoState createState() => _TaskInfoState();
 }
 
-class _Task_InfoState extends State<CompletedTaskInfo> {
+class _TaskInfoState extends State<CompletedTaskInfo> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -45,4 +45,3 @@ class _Task_InfoState extends State<CompletedTaskInfo> {
     );
   }
 }
-

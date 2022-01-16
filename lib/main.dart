@@ -8,10 +8,10 @@ import 'Pages/main_screen.dart';
 
 void main() {
   runApp(
-      ChangeNotifierProvider<TodosProvider>(
-          create: (BuildContext context) => TodosProvider(),
-        child: const MyApp(),
-      ),
+    ChangeNotifierProvider<TodosProvider>(
+      create: (BuildContext context) => TodosProvider(),
+      child: const MyApp(),
+    ),
   );
 }
 
@@ -21,16 +21,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-    title: 'Todo Moon',
-    debugShowCheckedModeBanner: false,
-    theme: ThemeData(
-      primaryColor: HexColor('#f9f6e8'),
-    ),
-    home: Consumer<TodosProvider>(
-      builder: (context, state,child) => state.nameIsEmpty() == true ? const WelcomeScreen() :const MainScreen(),
+      title: 'Todo Moon',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: HexColor('#f9f6e8'),
+      ),
+      home: Consumer<TodosProvider>(
+        builder: (context, state, child) => state.nameIsEmpty() == true
+            ? const WelcomeScreen()
+            : const MainScreen(),
       ),
     );
   }
 }
-
-

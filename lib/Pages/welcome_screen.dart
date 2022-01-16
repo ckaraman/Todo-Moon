@@ -33,13 +33,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              const welcomeText(),
+              const WelcomeText(),
               Form(
                 key: formKey,
                 child: Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: Column(children: [
-                    WelcomCustomTF(controller: nameController, labelText: 'name'),
+                    WelcomCustomTF(
+                        controller: nameController, labelText: 'name'),
                     WelcomCustomTF(
                         controller: surnameController, labelText: 'Surname'),
                   ]),
@@ -52,10 +53,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       if (validResult == true) {
                         state.setName(nameController.text);
                         state.setsurName(surnameController.text);
-                        print('Name : ${state.name}');
-                        print('Surname : ${state.surname}');
-                        print('Name 2 : ${nameController.text}');
-                        print('Surname 2 : ${surnameController.text}');
+                        // print('Name : ${state.name}');
+                        // print('Surname : ${state.surname}');
+                        // print('Name 2 : ${nameController.text}');
+                        // print('Surname 2 : ${surnameController.text}');
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(

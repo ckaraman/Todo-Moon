@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 class CustomTF extends StatelessWidget {
-  CustomTF(
+  const CustomTF(
       {Key? key,
       required this.hint,
       required this.controller,
       required this.labelText})
       : super(key: key);
 
-  String labelText;
-  String hint;
-  TextEditingController controller;
+  final String labelText;
+  final String hint;
+  final TextEditingController controller;
 
   @override
   Widget build(BuildContext context) {

@@ -14,9 +14,11 @@ class InfoWidget extends StatelessWidget {
       radius: 48.0,
       lineWidth: 6.0,
       animation: true,
-      percent:  percent.isNaN ? 0 : percent,
+      percent: percent.isNaN ? 0 : percent,
       center: Text(
-        percent.isNaN ? '${((percent = 0)*100).round()}%' : '${(percent * 100).round()}%' ,
+        percent.isNaN
+            ? '${((percent = 0) * 100).round()}%'
+            : '${(percent * 100).round()}%',
         style: const TextStyle(color: Colors.white, fontSize: 10),
       ),
       backgroundColor: Colors.orangeAccent,
@@ -27,7 +29,7 @@ class InfoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double percent = Provider.of<TodosProvider>(context).calcTodoPercent();
-    print(percent);
+    //print(percent);
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
